@@ -62,6 +62,8 @@
 
 ## 📦 Installation & Setup
 
+> 📋 **For detailed setup instructions and troubleshooting, see [SETUP.md](./SETUP.md)**
+
 ### Prerequisites
 - **Node.js** (v18 or higher)
 - **npm** or **yarn** package manager
@@ -80,7 +82,7 @@ npm install
 # Start development server
 npm run dev
 
-# Open your browser to http://localhost:5173
+# Open your browser to http://localhost:3000
 ```
 
 ### Available Scripts
