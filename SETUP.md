@@ -15,12 +15,14 @@ Before setting up the project, ensure you have the following installed:
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/ARK650/nurburgring-analytics.git
    cd nurburgring-analytics
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    # or
@@ -28,6 +30,7 @@ Before setting up the project, ensure you have the following installed:
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    # or
@@ -65,7 +68,9 @@ nurburgring-analytics/
 The following configuration files are essential and should be present in the root directory:
 
 #### 1. **tsconfig.json**
+
 TypeScript configuration for the main project:
+
 ```json
 {
   "compilerOptions": {
@@ -95,7 +100,9 @@ TypeScript configuration for the main project:
 ```
 
 #### 2. **tsconfig.node.json**
+
 TypeScript configuration for Vite:
+
 ```json
 {
   "compilerOptions": {
@@ -111,7 +118,9 @@ TypeScript configuration for Vite:
 ```
 
 #### 3. **tailwind.config.js**
+
 Tailwind CSS configuration with custom theme:
+
 ```javascript
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -126,7 +135,9 @@ export default {
 ```
 
 #### 4. **postcss.config.js**
+
 PostCSS configuration for processing CSS:
+
 ```javascript
 module.exports = {
   plugins: {
@@ -158,15 +169,19 @@ module.exports = {
 ## 🚨 Common Setup Issues & Solutions
 
 ### Issue 1: TypeScript Errors about JSX
+
 **Problem:** `JSX element implicitly has type 'any'`
 **Solution:** Ensure `@types/react` and `@types/react-dom` are installed:
+
 ```bash
 npm install --save-dev @types/react @types/react-dom typescript
 ```
 
 ### Issue 2: PostCSS Configuration Errors
+
 **Problem:** `Failed to load PostCSS config` or `Unexpected token 'export'`
 **Solution:** Ensure `postcss.config.js` uses CommonJS syntax:
+
 ```javascript
 module.exports = {
   plugins: {
@@ -177,15 +192,19 @@ module.exports = {
 ```
 
 ### Issue 3: Tailwind CSS Not Working
+
 **Problem:** Styles not applying or build errors
 **Solution:** Install the modern Tailwind PostCSS plugin:
+
 ```bash
 npm install --save-dev @tailwindcss/postcss tailwindcss autoprefixer
 ```
 
 ### Issue 4: Motion Library Import Errors
+
 **Problem:** Cannot resolve 'motion/react'
 **Solution:** Ensure the motion package is properly installed:
+
 ```bash
 npm install motion
 ```
@@ -209,13 +228,17 @@ npm run deploy
 ## 🏗️ Build & Deployment
 
 ### Production Build
+
 ```bash
 npm run build
 ```
+
 This creates optimized files in the `build/` directory.
 
 ### GitHub Pages Deployment
+
 The project is configured for GitHub Pages deployment:
+
 ```bash
 npm run deploy
 ```
@@ -231,18 +254,21 @@ npm run deploy
 ## 🔧 Development Guidelines
 
 ### Code Organization
+
 - Use TypeScript for all new files
 - Follow React functional components pattern
 - Implement proper error boundaries
 - Use custom hooks for shared logic
 
 ### Styling Conventions
+
 - Prefer Tailwind utilities over custom CSS
 - Use semantic color variables
 - Implement consistent spacing system
 - Ensure accessibility compliance
 
 ### Performance Considerations
+
 - Implement code splitting where appropriate
 - Optimize images and assets
 - Use React.memo for expensive components
@@ -251,6 +277,7 @@ npm run deploy
 ## 📋 Environment Variables
 
 Create a `.env.local` file for local environment variables:
+
 ```env
 # Add any environment-specific variables here
 VITE_API_URL=your_api_url_here
@@ -259,15 +286,18 @@ VITE_API_URL=your_api_url_here
 ## 🐛 Troubleshooting
 
 ### Fresh Installation Issues
+
 If you encounter issues after cloning:
 
 1. **Delete node_modules and reinstall:**
+
    ```bash
    rm -rf node_modules package-lock.json
    npm install
    ```
 
 2. **Clear Vite cache:**
+
    ```bash
    rm -rf node_modules/.vite
    npm run dev
@@ -279,6 +309,7 @@ If you encounter issues after cloning:
    ```
 
 ### Build Issues
+
 1. Check TypeScript compilation: `npx tsc --noEmit`
 2. Verify all config files are present
 3. Ensure all dependencies are installed
@@ -286,6 +317,7 @@ If you encounter issues after cloning:
 ## 📞 Support
 
 For issues related to this project:
+
 1. Check existing GitHub issues
 2. Create a new issue with detailed description
 3. Include system information and error messages

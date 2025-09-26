@@ -1,4 +1,3 @@
-
 # 🏁 Nürburgring Analytics
 
 > **The Ultimate Proving Ground** - A comprehensive data visualization platform for the legendary Nürburgring Nordschleife
@@ -25,37 +24,44 @@
 
 ## 🚀 Live Demo
 
-🔗 **[View Live Site](https://nurburgring-analytics.vercel.app)** *(Deploy after GitHub setup)*
+🔗 **[View Live Site](https://nurburgring-analytics.vercel.app)** _(Deploy after GitHub setup)_
 
 ## 📸 Screenshots
 
 ### Hero Section with Animated Track
+
 ![Hero Section](docs/hero-screenshot.png)
 
 ### Interactive Car Categories with Horizontal Scrolling
+
 ![Car Categories](docs/cars-screenshot.png)
 
 ### Performance Dashboard
+
 ![Dashboard](docs/dashboard-screenshot.png)
 
 ## 🛠️ Technology Stack
 
 ### Frontend Framework
+
 - **React 18** - Modern React with hooks and functional components
 - **TypeScript** - Type-safe development with full IntelliSense support
 - **Vite** - Next-generation frontend tooling for blazing fast builds
 
 ### Styling & Animation
+
 - **Tailwind CSS** - Utility-first CSS framework for rapid UI development
 - **Framer Motion** - Production-ready motion library for smooth animations
 - **Custom CSS Variables** - Consistent theming and design system
 
 ### UI Components
+
 - **Lucide React** - Beautiful, customizable SVG icons
 - **Custom Component Library** - Reusable UI components with consistent styling
 - **Responsive Grid System** - Mobile-first approach with flexible layouts
 
 ### Data Visualization
+
 - **Custom Chart Components** - Interactive bar, line, and pie charts
 - **SVG Animations** - Hand-crafted track layout with animated racing elements
 - **Real-time Metrics** - Live updating performance indicators
@@ -65,6 +71,7 @@
 > 📋 **For detailed setup instructions and troubleshooting, see [SETUP.md](./SETUP.md)**
 
 ### Prerequisites
+
 - **Node.js** (v18 or higher)
 - **npm** or **yarn** package manager
 - **Git** for version control
@@ -125,17 +132,20 @@ src/
 ## 🎨 Design System
 
 ### Color Palette
+
 - **Primary**: Emerald (`#10b981`) - Representing the "Green Hell"
 - **Secondary**: Blue (`#3b82f6`) - Modern accent color
 - **Accent**: Purple (`#8b5cf6`) - Visual hierarchy
 - **Background**: Deep blacks and slate grays for premium feel
 
 ### Typography
+
 - **Headings**: Bold, gradient text effects
 - **Body**: Clean, readable fonts with proper contrast
 - **Monospace**: Used for lap times and technical data
 
 ### Animation Principles
+
 - **Smooth Transitions**: 300-500ms duration for natural feel
 - **Staggered Animations**: Sequential element reveals
 - **Micro-interactions**: Hover effects and loading states
@@ -144,19 +154,24 @@ src/
 ## 🚗 Car Database
 
 ### Categories Included
+
 1. **Road Legal Supercars** (12 cars)
+
    - Porsche 911 GT2 RS, Lamborghini Huracán, McLaren 720S, etc.
 
 2. **Electric Vehicles** (12 cars)
+
    - Tesla Model S Plaid, Porsche Taycan Turbo S, Audi e-tron GT, etc.
 
 3. **Race Cars & Prototypes** (12 cars)
+
    - Porsche 919 Hybrid Evo, Formula 1 cars, Le Mans prototypes, etc.
 
 4. **Track Day Specials** (12 cars)
    - Radical SR8, Caterham Seven, BAC Mono, etc.
 
 ### Data Points Per Vehicle
+
 - 🚗 **Vehicle Name** - Full model designation
 - 🏁 **Lap Time** - Nürburgring Nordschleife time
 - 🔧 **Power Output** - Engine specifications
@@ -168,12 +183,14 @@ src/
 ## 📊 Performance Features
 
 ### Real-time Dashboard
+
 - **Live Data Streaming** - Simulated real-time updates
 - **Interactive Charts** - Bar, line, and pie chart visualizations
 - **Performance Metrics** - Key statistics and trends
 - **Responsive Analytics** - Mobile-optimized data displays
 
 ### Track Visualization
+
 - **SVG Animation** - Custom-drawn Nordschleife layout
 - **Racing Car Animation** - Smooth path following animation
 - **Interactive Elements** - Hover effects and transitions
@@ -182,6 +199,7 @@ src/
 ## 🔧 Customization
 
 ### Adding New Cars
+
 ```typescript
 // In CarCategories.tsx
 const newCar = {
@@ -193,16 +211,18 @@ const newCar = {
   highlights: ["Feature 1", "Feature 2", "Feature 3"],
   country: "🇺🇸", // Flag emoji
   brand: "Brand Name",
-  image: "🏎️" // Car emoji
+  image: "🏎️", // Car emoji
 };
 ```
 
 ### Styling Modifications
+
 - Edit `src/styles/globals.css` for global styles
 - Modify CSS variables in `:root` for consistent theming
 - Update Tailwind configuration in `tailwind.config.js`
 
 ### Adding New Sections
+
 - Create new component in `src/components/`
 - Import and add to `App.tsx`
 - Update navigation in `Navigation.tsx`
@@ -210,6 +230,7 @@ const newCar = {
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
+
 ```bash
 # Install Vercel CLI
 npm i -g vercel
@@ -221,6 +242,7 @@ vercel
 ```
 
 ### Netlify
+
 ```bash
 # Build the project
 npm run build
@@ -229,6 +251,7 @@ npm run build
 ```
 
 ### GitHub Pages
+
 ```bash
 # Install gh-pages
 npm install --save-dev gh-pages
@@ -252,6 +275,7 @@ We welcome contributions! Please follow these steps:
 5. **Open** a Pull Request
 
 ### Development Guidelines
+
 - Follow TypeScript best practices
 - Maintain responsive design principles
 - Write meaningful commit messages
@@ -275,9 +299,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 **GitHub**: [@ARK650](https://github.com/ARK650)
 
 ### Issues & Bug Reports
+
 Please use the [GitHub Issues](https://github.com/ARK650/nurburgring-analytics/issues) page to report bugs or request features.
 
 ### Feature Requests
+
 We're always looking to improve! Submit feature requests through GitHub Issues with the `enhancement` label.
 
 ---
@@ -290,6 +316,7 @@ We're always looking to improve! Submit feature requests through GitHub Issues w
 ## 🗓️ Changelog
 
 ### v1.0.0 (Current)
+
 - ✅ Initial release with full feature set
 - ✅ Responsive design implementation
 - ✅ 48+ car database with horizontal scrolling
@@ -298,6 +325,7 @@ We're always looking to improve! Submit feature requests through GitHub Issues w
 - ✅ Complete rebrand from portfolio to Nürburgring Analytics
 
 ### Planned Features (v1.1.0)
+
 - 🔄 Real API integration for live lap times
 - 🔄 User authentication and personal lap tracking
 - 🔄 Advanced filtering and search capabilities
@@ -306,5 +334,4 @@ We're always looking to improve! Submit feature requests through GitHub Issues w
 
 ---
 
-*Last updated: January 2025*
-  
+_Last updated: January 2025_
