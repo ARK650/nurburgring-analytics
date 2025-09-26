@@ -60,7 +60,14 @@
 - **SVG Animations** - Hand-crafted track layout with animated racing elements
 - **Real-time Metrics** - Live updating performance indicators
 
-## 📦 Installation & Setup
+## � Documentation
+
+- **📦 [Installation Guide](INSTALLATION.md)** - Detailed setup instructions for all platforms
+- **🚀 [Deployment Guide](DEPLOYMENT.md)** - Deploy to Vercel, Netlify, GitHub Pages, and more
+- **🤝 [Contributing Guidelines](CONTRIBUTING.md)** - How to contribute to the project
+- **📄 [License](LICENSE)** - MIT License details
+
+## �📦 Installation & Setup
 
 ### Prerequisites
 - **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
