@@ -63,9 +63,10 @@
 ## 📦 Installation & Setup
 
 ### Prerequisites
-- **Node.js** (v18 or higher)
-- **npm** or **yarn** package manager
-- **Git** for version control
+- **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
+- **npm** (comes with Node.js) or **yarn** package manager
+- **Git** for version control - [Download here](https://git-scm.com/)
+- **Modern browser** (Chrome, Firefox, Safari, Edge)
 
 ### Quick Start
 
@@ -74,13 +75,30 @@
 git clone https://github.com/ARK650/nurburgring-analytics.git
 cd nurburgring-analytics
 
-# Install dependencies
+# Install dependencies (this may take a few minutes)
 npm install
 
 # Start development server
 npm run dev
 
-# Open your browser to http://localhost:5173
+# Open your browser to http://localhost:3001/nurburgring-analytics/
+# Note: Port may vary if 3000 is in use
+```
+
+### Alternative Installation Methods
+
+#### Using Yarn
+```bash
+# If you prefer yarn package manager
+yarn install
+yarn dev
+```
+
+#### Using pnpm
+```bash
+# If you prefer pnpm (faster alternative)
+pnpm install
+pnpm dev
 ```
 
 ### Available Scripts
@@ -285,24 +303,83 @@ We're always looking to improve! Submit feature requests through GitHub Issues w
   <p><em>⚠️ Not affiliated with Nürburgring GmbH. All data used for educational and entertainment purposes.</em></p>
 </div>
 
-## 🗓️ Changelog
+## �️ Troubleshooting
 
-### v1.0.0 (Current)
+### Common Issues & Solutions
+
+#### Port Already in Use
+```bash
+# If you see "Port 3000 is in use"
+# The app will automatically try port 3001, 3002, etc.
+# Or manually specify a port:
+npm run dev -- --port 4000
+```
+
+#### TypeScript Errors
+```bash
+# If you encounter TypeScript compilation errors:
+npm install @types/react @types/react-dom typescript --save-dev
+```
+
+#### Tailwind CSS Not Working
+```bash
+# If styles aren't loading properly:
+npm install tailwindcss postcss autoprefixer @tailwindcss/postcss --save-dev
+```
+
+#### Build Errors
+```bash
+# Clear cache and reinstall dependencies
+rm -rf node_modules package-lock.json
+npm install
+```
+
+### Performance Optimization
+
+#### For Development
+- Use `npm run dev` for hot reload during development
+- Keep browser dev tools open to monitor performance
+- Use Chrome DevTools for debugging React components
+
+#### For Production
+- Run `npm run build` to optimize bundle size
+- Use `npm run preview` to test production build locally
+- Enable gzip compression on your hosting platform
+
+### Browser Compatibility
+- **Chrome/Edge**: 88+ (recommended)
+- **Firefox**: 85+
+- **Safari**: 14+
+- **Mobile**: iOS Safari 14+, Chrome Mobile 88+
+
+## �🗓️ Changelog
+
+### v1.1.0 (Current - September 2025)
+- ✅ **Fixed TypeScript Configuration** - Resolved all JSX compilation errors
+- ✅ **Updated Tailwind CSS** - Migrated to latest PostCSS plugin architecture  
+- ✅ **Enhanced Development Setup** - Added proper tsconfig files for better IDE support
+- ✅ **Custom CSS Utilities** - Added glass-morphism effects and hover animations
+- ✅ **Improved Documentation** - Comprehensive setup and troubleshooting guides
+- ✅ **Dependency Updates** - Updated all packages to latest stable versions
+
+### v1.0.0 (Initial Release)
 - ✅ Initial release with full feature set
-- ✅ Responsive design implementation
+- ✅ Responsive design implementation  
 - ✅ 48+ car database with horizontal scrolling
 - ✅ Animated track visualization
 - ✅ Performance dashboard with charts
 - ✅ Complete rebrand from portfolio to Nürburgring Analytics
 
-### Planned Features (v1.1.0)
+### Planned Features (v1.2.0)
 - 🔄 Real API integration for live lap times
 - 🔄 User authentication and personal lap tracking
 - 🔄 Advanced filtering and search capabilities
 - 🔄 3D track visualization option
 - 🔄 Mobile app version
+- 🔄 Progressive Web App (PWA) support
+- 🔄 Dark/Light theme toggle
 
 ---
 
-*Last updated: January 2025*
+*Last updated: September 26, 2025*
   
